@@ -1,6 +1,5 @@
 import random
 
-
 class Human:
     def __init__(self, name="Human", job=None, home=None, car=None):
         self.name = name
@@ -156,7 +155,6 @@ class Human:
             print("Time for treats!")
             self.shopping(manage="delicacies")
 
-
 class Auto:
     def __init__(self, brand_list):
         self.brand = random.choice(list(brand_list))
@@ -173,12 +171,10 @@ class Auto:
             print("The car is out of fuel OR needs repairing")
             return False
 
-
 class House:
     def __init__(self):
         self.mess = 0
         self.food = 0
-
 
 job_list = {
     "Motion designer": {"salary": 50, "gladness_less": 10},
@@ -194,13 +190,11 @@ brands_of_car = {
     "Ferrari": {"fuel": 80, "strength": 120, "consumption": 14},
 }
 
-
 class Job:
     def __init__(self, job_list):
         self.job = random.choice(list(job_list))
         self.salary = job_list[self.job]["salary"]
         self.gladness_less = job_list[self.job]["gladness_less"]
-
 
 nick = Human(name="Liam")
 for day in range(1, 366):
